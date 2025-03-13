@@ -1,26 +1,29 @@
------------------------------------------------------------------
--- Logo Watermark- A Simple FiveM Script, Made By Jordan.#2139 --
------------------------------------------------------------------
-
-fx_version "bodacious"
+fx_version "cerulean"
 game "gta5"
+lua54 "yes"
+use_experimental_fxv2_oal "yes"
 
--- Define the resource metadata
-name "Logo Watermark"
-description "A Simple Logo Watermark"
-author "Jordan.#2139"
-version "v1.2.0"
+description "Script simples para exibir logo no servidor"
+author "MRI QBOX Team"
+version "v1.0.0"
 
-
-
+shared_scripts {
+    "shared/*.lua"
+}
 
 client_scripts {
-	"client.lua",
-	'config.lua'
+    "client/*.lua"
 }
 
-ui_page 'html/ui.html'
-files {
-	'html/*',
-	'img/logo.png'
+dependencies {
+    "qbx_core",
+    "PolyZone",
+    "ox_lib",
+    "oxmysql",
 }
+
+files {
+    "html/**/*"
+}
+
+ui_page "html/index.html"

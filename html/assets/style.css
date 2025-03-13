@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    pointer-events: none;
+}
+
+#logo-container {
+    position: fixed;
+}
+
+#server-logo {
+    width: 128px;
+    height: 128px;
+}
